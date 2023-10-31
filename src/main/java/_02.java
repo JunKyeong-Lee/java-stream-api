@@ -13,7 +13,7 @@ public class _02 {
         String[] strings = {"aaa", "bbb", "cc", "d", "eeeeee", "ff", "asdq"};
         String stream = Arrays.stream(strings)
                 .filter(w -> w.length() > 1)
-                .map((str) -> str.toUpperCase()) // .map(String::toUpperCase)
+                .map(String::toUpperCase)
                 .map(w -> w.substring(0, 1))
                 .collect(Collectors.joining(" "));
         System.out.println(stream);
