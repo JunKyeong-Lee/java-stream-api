@@ -1,4 +1,4 @@
-package book;
+package book1.question;
 
 import java.util.stream.Collectors;
 import java.util.stream.Stream;
